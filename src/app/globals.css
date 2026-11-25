@@ -27,6 +27,24 @@
   --write-sub: #717A76;
   --hero-overlay: linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%);
   --brown:#B49D97;
+  --section-padding-y: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-padding-y: 3.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-padding-y: 4rem;
+  }
+}
+
+@utility section-padding {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
 }
 
 @utility bg-hero-overlay {
