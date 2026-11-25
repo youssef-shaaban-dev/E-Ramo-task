@@ -8,6 +8,7 @@ import { AppDownloadSection } from "@/components/home/AppDownloadSection";
 import { PricingSection } from "@/components/home/PricingSection";
 import { RecentArticlesSection } from "@/components/home/RecentArticlesSection";
 import { ContactSection } from "@/components/home/ContactSection";
+import { TrustedBySection } from "@/components/home/TrustedBySection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <PricingSection />
       <RecentArticlesSection />
       <ContactSection />
+      <TrustedBySection />
     </>
   );
 }
