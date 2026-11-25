@@ -72,7 +72,7 @@ export function Hero() {
           className="absolute inset-0 z-10 pointer-events-none bg-hero-overlay"
           style={{
             background:
-              "linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%)",
+              "linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%)",
           }}
           aria-hidden="true"
         />

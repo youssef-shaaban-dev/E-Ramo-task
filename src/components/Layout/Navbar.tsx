@@ -40,7 +40,7 @@ export function Navbar() {
                             href={item.href}
                             className={`text-sm transition-colors py-1 relative ${item.isActive
                                     ? "text-primary font-semibold"
-                                    : "text-muted-foreground hover:text-foreground"
+                                    : "text-write-sub hover:text-write-main"
                                 }`}
                         >
                             {item.label}
@@ -102,7 +102,7 @@ export function Navbar() {
                                 onClick={() => setMobileMenuOpen(false)}
                                 className={`px-3 py-2 rounded-lg text-sm font-medium ${item.isActive
                                         ? "bg-accent text-accent-foreground font-semibold"
-                                        : "text-muted-foreground hover:bg-muted"
+                                        : "text-write-sub hover:bg-muted"
                                     }`}
                             >
                                 {item.label}

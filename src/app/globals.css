@@ -23,11 +23,13 @@
   --unavailable: #D9534F;
   --unavailable-foreground: #ffffff;
   --rating: #F5A623;
-  --hero-overlay: linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%);
+  --write-main: #1A2921;
+  --write-sub: #717A76;
+  --hero-overlay: linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%);
 }
 
 @utility bg-hero-overlay {
-  background: linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%);
+  background: linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%);
 }
 
 @theme inline {
@@ -53,6 +55,8 @@
   --color-unavailable: var(--unavailable);
   --color-unavailable-foreground: var(--unavailable-foreground);
   --color-rating: var(--rating);
+  --color-write-main: var(--write-main);
+  --color-write-sub: var(--write-sub);
   --font-title: var(--font-dm-sans);
   --font-body: var(--font-open-sans);
   --font-sans: var(--font-open-sans);

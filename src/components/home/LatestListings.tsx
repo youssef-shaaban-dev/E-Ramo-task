@@ -105,10 +105,10 @@ export function LatestListings() {
     <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 md:py-18">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground font-title">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-write-main font-title">
           Latest Listings
         </h2>
-        <p className="mt-2 text-sm sm:text-base text-muted-foreground font-body">
+        <p className="mt-2 text-sm sm:text-base text-write-main font-body">
           Check our latest listings
         </p>
       </div>
@@ -133,6 +133,16 @@ export function LatestListings() {
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                   decoding="async"
+                />
+
+                {/* Dark gradient overlay matching design */}
+                <div
+                  className="absolute inset-0 z-1 pointer-events-none bg-hero-overlay"
+                  style={{
+                    background:
+                      "linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%)",
+                  }}
+                  aria-hidden="true"
                 />
 
                 {/* Corner Diagonal Ribbon */}

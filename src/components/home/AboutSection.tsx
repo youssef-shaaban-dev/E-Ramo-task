@@ -63,12 +63,12 @@ export function AboutSection() {
         {/* Left Column: Text & Features */}
         <div className="flex flex-col">
           {/* Section Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-write-main font-title leading-tight">
             About Chair Location
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl">
+          <p className="mt-4 text-sm sm:text-base text-write-sub leading-relaxed max-w-xl">
             &ldquo;Chair location&rdquo; is a website where you can search, find and reserve co-working space,
             including co-working offices, private offices, meeting rooms, and virtual offices near you.
             It shows the features and amenities this space can provide. Professionals and businesses can
