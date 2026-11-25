@@ -14,6 +14,8 @@
   --accent: #eef4ea;
   --accent-foreground: #365327;
   --ring: #365327;
+  --badge-warm: #E7CAAA;
+  --badge-warm-foreground: #365327;
 }
 
 @theme inline {
@@ -30,6 +32,8 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-ring: var(--ring);
+  --color-badge-warm: var(--badge-warm);
+  --color-badge-warm-foreground: var(--badge-warm-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

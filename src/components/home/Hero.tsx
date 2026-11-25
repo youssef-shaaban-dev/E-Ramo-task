@@ -54,7 +54,7 @@ export function Hero() {
   return (
     <section className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-2 pb-20 md:pb-24">
       {/* Hero Visual Card */}
-      <div className="relative w-full h-[400px] sm:h-[480px] md:h-[540px] lg:h-[580px] rounded-3xl md:rounded-[36px] overflow-hidden shadow-md">
+      <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] lg:aspect-[21/9] min-h-100 sm:min-h-120 md:min-h-135 lg:min-h-145 rounded-3xl md:rounded-4xl overflow-hidden shadow-md">
         {/* Background Image */}
         <Image
           src="/hero-banner.jpg"
@@ -64,6 +64,7 @@ export function Hero() {
           sizes="(max-width: 1280px) 100vw, 1280px"
           className="object-cover object-center"
           loading="eager"
+          fetchPriority="high"
         />
 
         {/* Ambient Dark Overlay for text legibility */}

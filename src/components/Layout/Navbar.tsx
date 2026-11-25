@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { User, ChevronDown, Menu, X, Armchair } from "lucide-react";
+import { User, ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
@@ -29,7 +29,7 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
                 {/* Brand Logo */}
                 <Link href="/" className="flex items-center gap-2.5 group">
-                    <Image src="/logo.png" alt="Logo" width={500} height={500} className="w-20 h-20" loading="eager" />
+                    <Image src="/logo.png" alt="Logo" width={500} height={500} className="w-20 h-20" loading="eager" fetchPriority="high" />
                 </Link>
 
                 {/* Desktop Navigation Links */}
