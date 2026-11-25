@@ -135,16 +135,6 @@ export function LatestListings() {
                   decoding="async"
                 />
 
-                {/* Dark gradient overlay matching design */}
-                <div
-                  className="absolute inset-0 z-1 pointer-events-none bg-hero-overlay"
-                  style={{
-                    background:
-                      "linear-gradient(182.22deg, #1A2921 -28.59%, rgba(255, 255, 255, 0) 98.14%)",
-                  }}
-                  aria-hidden="true"
-                />
-
                 {/* Corner Diagonal Ribbon */}
                 <div className="absolute top-0 left-0 w-24 h-24 overflow-hidden pointer-events-none z-10">
                   <div
