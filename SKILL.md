@@ -24,6 +24,7 @@ Before writing any JSX/TSX or CSS, inspect the workspace to establish ground tru
 ## 3. Tailwind Sizing & Arbitrary Value Discipline
 
 - **Prefer Scale Utilities Over Arbitrary Values:** Never write arbitrary brackets like `h-[400px]`, `w-[300px]`, `p-[16px]`, or `gap-[24px]` when a standard or dynamic Tailwind spacing utility exists (for example, `h-100` for `400px`, `w-75` for `300px`, `p-4` for `16px`, `gap-6` for `24px`).
+- **Aspect Ratio Fractions (Tailwind v4):** In Tailwind v4, dynamic ratios do not need arbitrary bracket syntax. For example, `lg:aspect-[21/9]` can and should be written as `lg:aspect-21/9`, `aspect-[16/9]` as `aspect-16/9`, and `aspect-[4/3]` as `aspect-4/3`.
 - **No Arbitrary Guesswork:** Reserve bracketed arbitrary values (`[...]`) strictly for genuinely custom measurements that do not map cleanly to the spacing scale, and document why an arbitrary value is needed.
 - **Fluid & Responsive Sizing:** Use responsive breakpoints (`sm:`, `md:`, `lg:`, `xl:`) and `clamp()` / scale utilities instead of rigid fixed pixel boxes that break on smaller or larger viewports.
 

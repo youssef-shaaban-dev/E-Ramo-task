@@ -16,6 +16,12 @@
   --ring: #365327;
   --badge-warm: #E7CAAA;
   --badge-warm-foreground: #365327;
+  --hero-title: #F8E9D9;
+  --hero-overlay: linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%);
+}
+
+@utility bg-hero-overlay {
+  background: linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%);
 }
 
 @theme inline {
@@ -34,6 +40,7 @@
   --color-ring: var(--ring);
   --color-badge-warm: var(--badge-warm);
   --color-badge-warm-foreground: var(--badge-warm-foreground);
+  --color-hero-title: var(--hero-title);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

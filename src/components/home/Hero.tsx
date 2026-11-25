@@ -54,7 +54,7 @@ export function Hero() {
   return (
     <section className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-2 pb-20 md:pb-24">
       {/* Hero Visual Card */}
-      <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] lg:aspect-[21/9] min-h-100 sm:min-h-120 md:min-h-135 lg:min-h-145 rounded-3xl md:rounded-4xl overflow-hidden shadow-md">
+      <div className="relative w-full aspect-4/3 sm:aspect-16/10 md:aspect-video lg:aspect-21/9 min-h-100 sm:min-h-120 md:min-h-135 lg:min-h-145 rounded-3xl md:rounded-4xl overflow-hidden shadow-md">
         {/* Background Image */}
         <Image
           src="/hero-banner.jpg"
@@ -67,12 +67,22 @@ export function Hero() {
           fetchPriority="high"
         />
 
-        {/* Ambient Dark Overlay for text legibility */}
-        <div className="absolute inset-0 bg-black/45 backdrop-blur-[0.5px]" />
+        {/* Ambient Dark Overlay with exact Figma linear gradient */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none bg-hero-overlay"
+          style={{
+            background:
+              "linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%)",
+          }}
+          aria-hidden="true"
+        />
 
         {/* Centered Typography */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 pb-16 sm:pb-20">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white drop-shadow-md leading-tight max-w-4xl">
+        <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 pb-16 sm:pb-20">
+          <h1
+            className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-hero-title drop-shadow-md leading-tight max-w-4xl"
+            style={{ color: "var(--hero-title, #F8E9D9)" }}
+          >
             <span>Office That Fit You</span>
             <span className="block mt-1 sm:mt-2">Creative Way To Work</span>
           </h1>
