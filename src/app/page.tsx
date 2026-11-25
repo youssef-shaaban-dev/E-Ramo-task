@@ -4,6 +4,7 @@ import { LatestListings } from "@/components/home/LatestListings";
 import { SpaceDetailsSection } from "@/components/home/SpaceDetailsSection";
 import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { HybridWorkingSection } from "@/components/home/HybridWorkingSection";
+import { AppDownloadSection } from "@/components/home/AppDownloadSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SpaceDetailsSection />
       <HowItWorksSection />
       <HybridWorkingSection />
+      <AppDownloadSection />
     </>
   );
 }
