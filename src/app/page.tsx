@@ -9,6 +9,7 @@ import { PricingSection } from "@/components/home/PricingSection";
 import { RecentArticlesSection } from "@/components/home/RecentArticlesSection";
 import { ContactSection } from "@/components/home/ContactSection";
 import { TrustedBySection } from "@/components/home/TrustedBySection";
+import { NewsletterSection } from "@/components/home/NewsletterSection";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <RecentArticlesSection />
       <ContactSection />
       <TrustedBySection />
+      <NewsletterSection />
     </>
   );
 }
