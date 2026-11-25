@@ -51,7 +51,7 @@ export function HowItWorksSection() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-write-main font-title">
           How It Works
         </h2>
-        <p className="mt-4 text-sm sm:text-base text-write-sub font-body font-normal max-w-md mx-auto leading-relaxed">
+        <p className="mt-4 text-sm sm:text-base text-write-main font-body font-normal max-w-md mx-auto leading-relaxed">
           Coworking &amp; Flexible Office Marketplace | Search &amp; Book Today
         </p>
       </div>
@@ -84,7 +84,7 @@ export function HowItWorksSection() {
             </div>
 
             {/* Description */}
-            <p className="mt-4 text-xs text-write-sub font-body font-normal leading-relaxed">
+            <p className="mt-4 text-xs text-write-main font-body font-normal leading-relaxed">
               {step.description}
             </p>
           </div>
