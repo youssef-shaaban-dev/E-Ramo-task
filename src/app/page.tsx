@@ -7,6 +7,7 @@ import { HybridWorkingSection } from "@/components/home/HybridWorkingSection";
 import { AppDownloadSection } from "@/components/home/AppDownloadSection";
 import { PricingSection } from "@/components/home/PricingSection";
 import { RecentArticlesSection } from "@/components/home/RecentArticlesSection";
+import { ContactSection } from "@/components/home/ContactSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <AppDownloadSection />
       <PricingSection />
       <RecentArticlesSection />
+      <ContactSection />
     </>
   );
 }
