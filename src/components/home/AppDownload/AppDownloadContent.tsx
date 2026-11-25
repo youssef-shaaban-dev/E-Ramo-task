@@ -5,14 +5,14 @@ import AppleIcon from "@/components/icons/AplleIcon";
 
 export function AppDownloadContent() {
   return (
-    <div className="relative flex flex-col items-start pb-10 lg:pb-14 pt-6 lg:pt-0">
-      {/* Decorative hand — top-right of this column */}
-      <div className="absolute -top-2 right-0 lg:-top-4 lg:-right-4 w-36 sm:w-44 lg:w-56 xl:w-64 pointer-events-none select-none">
+    <div className="relative lg:col-start-6 lg:col-span-7 flex flex-col items-start justify-center pb-10 lg:py-16 lg:pl-2">
+      {/* Decorative hand — top-right corner */}
+      <div className="hidden sm:block absolute top-5 right-0 w-24 md:w-28 lg:w-32 pointer-events-none select-none z-10">
         <Image
           src="/images/app/app-hand.png"
           alt=""
-          width={320}
-          height={340}
+          width={180}
+          height={190}
           className="w-full h-auto object-contain"
           loading="lazy"
           decoding="async"
@@ -21,29 +21,29 @@ export function AppDownloadContent() {
       </div>
 
       {/* Text content */}
-      <div className="relative z-10 max-w-sm mt-16 lg:mt-20">
-        <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight text-write-main font-title leading-snug">
+      <div className="relative z-20 max-w-lg">
+        <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight text-write-main font-title leading-tight">
           Explore The Chair Location App
         </h2>
-        <p className="mt-3 text-sm text-write-sub font-body font-normal leading-relaxed">
+        <p className="mt-3 text-sm sm:text-[15px] text-write-sub font-body font-normal leading-relaxed max-w-[390px]">
           Hybrid working offers you the freedom to work closer to clients,
           colleagues or home.
         </p>
 
         {/* Store Buttons */}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-6 flex flex-wrap items-center gap-3.5">
           {/* Google Play */}
           <a
             href="#"
-            className="inline-flex items-center gap-3 bg-write-main text-white rounded-xl px-5 py-3 hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2.5 bg-[#1B2521] text-white rounded-lg px-4 py-2 hover:opacity-90 transition-opacity"
             aria-label="Get it on Google Play"
           >
             <GooglePlayIcon className="w-6 h-7 shrink-0" />
-            <div className="flex flex-col text-left leading-tight">
-              <span className="text-[9px] font-normal font-body tracking-wide uppercase">
-                Get it on
+            <div className="flex flex-col text-left leading-none">
+              <span className="text-[8px] font-normal font-body tracking-wider uppercase text-white/80">
+                GET IT ON
               </span>
-              <span className="text-sm font-semibold font-title">
+              <span className="text-sm font-medium font-title mt-0.5">
                 Google Play
               </span>
             </div>
@@ -52,15 +52,15 @@ export function AppDownloadContent() {
           {/* App Store */}
           <a
             href="#"
-            className="inline-flex items-center gap-3 bg-write-main text-white rounded-xl px-5 py-3 hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2.5 bg-[#1B2521] text-white rounded-lg px-4 py-2 hover:opacity-90 transition-opacity"
             aria-label="Download on the App Store"
           >
             <AppleIcon className="w-5 h-7 shrink-0" />
-            <div className="flex flex-col text-left leading-tight">
-              <span className="text-[9px] font-normal font-body tracking-wide uppercase">
+            <div className="flex flex-col text-left leading-none">
+              <span className="text-[8px] font-normal font-body tracking-wide text-white/80">
                 Download on the
               </span>
-              <span className="text-sm font-semibold font-title">
+              <span className="text-sm font-medium font-title mt-0.5">
                 App Store
               </span>
             </div>
