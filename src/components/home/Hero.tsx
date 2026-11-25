@@ -91,70 +91,75 @@ export function Hero() {
 
       {/* Floating Filter & Search Card */}
       <div className="relative z-20 max-w-4xl mx-auto -mt-16 sm:-mt-20 md:-mt-24 px-3 sm:px-0">
-        <div className="bg-card text-card-foreground rounded-2xl sm:rounded-3xl shadow-xl shadow-black/8 border border-border p-3 sm:p-5">
-          {/* Category Tabs */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-2 pb-3 sm:pb-4 border-b border-border/60">
-            {SPACE_CATEGORIES.map((category) => {
-              const Icon = category.icon;
-              const isActive = activeCategory === category.id;
+        <div className="rounded-2xl sm:rounded-3xl shadow-xl shadow-black/8 border border-border/60 overflow-hidden">
+          {/* Top Category Tabs Row (Pure White) */}
+          <div className="bg-card px-4 pt-4 pb-3 sm:px-6 sm:pt-5 sm:pb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5">
+              {SPACE_CATEGORIES.map((category) => {
+                const Icon = category.icon;
+                const isActive = activeCategory === category.id;
 
-              return (
-                <button
-                  key={category.id}
-                  type="button"
-                  onClick={() => setActiveCategory(category.id)}
-                  className={`flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all duration-150 cursor-pointer ${isActive
-                      ? "bg-accent text-accent-foreground font-semibold shadow-2xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/60"
+                return (
+                  <button
+                    key={category.id}
+                    type="button"
+                    onClick={() => setActiveCategory(category.id)}
+                    className={`flex items-center justify-center gap-2 px-3 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-150 cursor-pointer ${
+                      isActive
+                        ? "bg-accent text-primary font-semibold border border-primary/25 shadow-2xs"
+                        : "bg-muted/60 text-muted-foreground hover:text-foreground hover:bg-muted"
                     }`}
-                  aria-pressed={isActive}
-                >
-                  <Icon className="w-4 h-4 shrink-0" />
-                  <span className="truncate">{category.label}</span>
-                </button>
-              );
-            })}
+                    aria-pressed={isActive}
+                  >
+                    <Icon className="w-4 h-4 shrink-0" />
+                    <span className="truncate">{category.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
-          {/* Search Inputs & Actions */}
-          <form
-            onSubmit={handleSearch}
-            className="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3"
-          >
-            {/* Search Input Field */}
-            <div className="relative flex-1 flex items-center bg-muted/40 hover:bg-muted/60 focus-within:bg-card focus-within:ring-2 focus-within:ring-ring rounded-xl px-3.5 py-1.5 transition-colors border border-transparent focus-within:border-border">
-              <Search className="w-4 h-4 text-muted-foreground shrink-0 mr-2.5" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search Here..."
-                className="w-full bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none py-1.5"
-              />
-            </div>
+          {/* Bottom Search Bar Section (Warm Tinted #FFFAF5) */}
+          <div className="bg-panel-warm px-4 py-3 sm:px-6 sm:py-4 border-t border-border/40">
+            <form
+              onSubmit={handleSearch}
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3"
+            >
+              {/* Search Input Field (Pure White container) */}
+              <div className="relative flex-1 flex items-center bg-card shadow-2xs rounded-xl px-3.5 py-2 transition-colors border border-border/80 focus-within:ring-2 focus-within:ring-ring focus-within:border-primary">
+                <Search className="w-4 h-4 text-muted-foreground shrink-0 mr-2.5" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search Here..."
+                  className="w-full bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none py-0.5"
+                />
+              </div>
 
-            {/* Quick Actions */}
-            <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-              <Button
-                type="button"
-                variant="ghost"
-                size="md"
-                leftIcon={<Compass className="w-4 h-4" />}
-                className="flex-1 sm:flex-none text-muted-foreground hover:text-foreground font-normal sm:font-medium text-xs sm:text-sm"
-              >
-                Search Nearby
-              </Button>
+              {/* Quick Actions */}
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="md"
+                  leftIcon={<Compass className="w-4 h-4 text-muted-foreground" />}
+                  className="flex-1 sm:flex-none text-foreground hover:text-primary font-medium text-xs sm:text-sm bg-transparent hover:bg-black/5"
+                >
+                  Search Nearby
+                </Button>
 
-              <Button
-                type="submit"
-                variant="primary"
-                size="md"
-                className="flex-1 sm:flex-none px-6 sm:px-8 font-semibold rounded-xl text-sm"
-              >
-                Search
-              </Button>
-            </div>
-          </form>
+                <Button
+                  type="submit"
+                  variant="primary"
+                  size="md"
+                  className="flex-1 sm:flex-none px-7 sm:px-9 font-semibold rounded-xl text-sm"
+                >
+                  Search
+                </Button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
