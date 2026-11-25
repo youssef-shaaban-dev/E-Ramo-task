@@ -5,7 +5,7 @@ export function AppPhoneMockup() {
     <div className="flex justify-center lg:justify-start pt-8 lg:pt-10 -mb-1">
       <div className="relative w-56 sm:w-72 md:w-80 lg:w-[380px] xl:w-[420px]">
         <Image
-          src="/app-phone.png"
+          src="/images/app/app-phone.png"
           alt="Chair Location mobile app showing co-working spaces"
           width={520}
           height={720}

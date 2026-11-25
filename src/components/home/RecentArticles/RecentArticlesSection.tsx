@@ -5,7 +5,7 @@ import { ArticleCard, ArticleItem } from "./ArticleCard";
 export const RECENT_ARTICLES: ArticleItem[] = [
   {
     id: 1,
-    image: "/blog-1.jpg",
+    image: "/images/articles/blog-1.jpg",
     alt: "Modern co-working space with shelves and wooden desks",
     author: "Mohamed MO",
     date: "20 Apr 2024",
@@ -16,7 +16,7 @@ export const RECENT_ARTICLES: ArticleItem[] = [
   },
   {
     id: 2,
-    image: "/blog-2.jpg",
+    image: "/images/articles/blog-2.jpg",
     alt: "Open plan co-working office with orange chairs and large windows",
     author: "Mohamed MO",
     date: "26 Apr 2024",
@@ -27,7 +27,7 @@ export const RECENT_ARTICLES: ArticleItem[] = [
   },
   {
     id: 3,
-    image: "/blog-3.jpg",
+    image: "/images/articles/blog-3.jpg",
     alt: "Co-working space with green chairs and wooden furniture",
     author: "Mohamed MO",
     date: "20 Apr 2024",

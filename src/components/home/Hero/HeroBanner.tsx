@@ -6,7 +6,7 @@ export function HeroBanner() {
     <div className="relative w-full aspect-4/3 sm:aspect-16/10 md:aspect-video lg:aspect-21/9 min-h-100 sm:min-h-120 md:min-h-135 lg:min-h-145 rounded-3xl md:rounded-4xl overflow-hidden shadow-md">
       {/* Background Image */}
       <Image
-        src="/hero-banner.jpg"
+        src="/images/hero/hero-banner.jpg"
         alt="Modern creative office space with warm wooden architecture and ergonomic chairs"
         fill
         priority

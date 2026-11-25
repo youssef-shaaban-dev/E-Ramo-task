@@ -9,7 +9,7 @@ export function AppDownloadContent() {
       {/* Decorative hand — top-right of this column */}
       <div className="absolute -top-2 right-0 lg:-top-4 lg:-right-4 w-36 sm:w-44 lg:w-56 xl:w-64 pointer-events-none select-none">
         <Image
-          src="/app-hand.png"
+          src="/images/app/app-hand.png"
           alt=""
           width={320}
           height={340}

@@ -6,7 +6,7 @@ export function NavbarLogo() {
   return (
     <Link href="/" className="flex items-center gap-2.5 group">
       <Image
-        src="/logo.png"
+        src="/images/logo/logo.png"
         alt="Chair Location Logo"
         width={500}
         height={500}

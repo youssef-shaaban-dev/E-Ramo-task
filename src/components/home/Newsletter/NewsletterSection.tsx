@@ -24,7 +24,7 @@ export function NewsletterSection() {
         </div>
 
         {/* Section Header */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-write-main font-title">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-write-main font-title">
           Subscribe To Our Newsletter
         </h2>
         <p className="mt-3 text-xs sm:text-sm text-write-sub font-body font-normal max-w-md mx-auto leading-relaxed">

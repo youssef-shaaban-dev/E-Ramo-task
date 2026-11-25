@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export const CONTACT_IMAGES = [
   {
-    src: "/contact-1.jpg",
+    src: "/images/contact/contact-1.jpg",
     alt: "Co-working space with brick wall and Edison bulb lighting",
     className: "relative rounded-2xl overflow-hidden bg-muted aspect-4/3",
   },
   {
-    src: "/contact-3.jpg",
+    src: "/images/contact/contact-3.jpg",
     alt: "Bright co-working space with colorful chairs",
     className: "relative rounded-2xl overflow-hidden bg-muted aspect-4/3",
   },
@@ -37,7 +37,7 @@ export function ContactMosaic() {
       {/* Right: 1 tall image */}
       <div className="relative rounded-2xl overflow-hidden bg-muted min-h-80">
         <Image
-          src="/contact-2.jpg"
+          src="/images/contact/contact-2.jpg"
           alt="Colorful co-working space with mural wall and wooden beams"
           fill
           sizes="(max-width: 1024px) 50vw, 25vw"

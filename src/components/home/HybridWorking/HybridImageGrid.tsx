@@ -8,15 +8,15 @@ export interface HybridImage {
 
 export const HYBRID_IMAGES: HybridImage[] = [
   {
-    src: "/hybrid-1.jpg",
+    src: "/images/hybrid/hybrid-1.jpg",
     alt: "Modern co-working space with shelves and wooden desks",
   },
   {
-    src: "/hybrid-2.jpg",
+    src: "/images/hybrid/hybrid-2.jpg",
     alt: "Open plan office with orange chairs and large windows",
   },
   {
-    src: "/hybrid-3.jpg",
+    src: "/images/hybrid/hybrid-3.jpg",
     alt: "Bright spacious office with white desks and plants",
   },
 ];

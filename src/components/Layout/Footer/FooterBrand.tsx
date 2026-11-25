@@ -11,7 +11,7 @@ export function FooterBrand() {
     <div className="flex flex-col items-start gap-6">
       <Link href="/" className="inline-block">
         <Image
-          src="/logo-tight.png"
+          src="/images/logo/logo-tight.png"
           alt="Chair Location"
           width={130}
           height={110}

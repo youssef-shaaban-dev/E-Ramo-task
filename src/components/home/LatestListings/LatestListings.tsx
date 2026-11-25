@@ -9,7 +9,7 @@ export const LISTING_ITEMS: ListingItem[] = [
     title: "Spot Co-Working Space",
     description:
       "Chair location is a website where you can search, find and reserve co-working space, including co-working",
-    image: "/listing-office.jpg",
+    image: "/images/listings/listing-office.jpg",
     category: "Shared Area",
     rating: 4.9,
     reviewCount: 162,
@@ -25,7 +25,7 @@ export const LISTING_ITEMS: ListingItem[] = [
     title: "Spot Co-Working Space",
     description:
       "Chair location is a website where you can search, find and reserve co-working space, including co-working",
-    image: "/listing-office.jpg",
+    image: "/images/listings/listing-office.jpg",
     category: "Meeting Room",
     rating: 4.9,
     reviewCount: 162,
@@ -41,7 +41,7 @@ export const LISTING_ITEMS: ListingItem[] = [
     title: "Spot Co-Working Space",
     description:
       "Chair location is a website where you can search, find and reserve co-working space, including co-working",
-    image: "/listing-office.jpg",
+    image: "/images/listings/listing-office.jpg",
     category: "Private Office",
     rating: 4.9,
     reviewCount: 162,
@@ -57,7 +57,7 @@ export const LISTING_ITEMS: ListingItem[] = [
     title: "Spot Co-Working Space",
     description:
       "Chair location is a website where you can search, find and reserve co-working space, including co-working",
-    image: "/listing-office.jpg",
+    image: "/images/listings/listing-office.jpg",
     category: "Meeting Room",
     rating: 4.9,
     reviewCount: 162,

@@ -8,15 +8,15 @@ export interface AboutImageItem {
 
 export const ABOUT_IMAGES: AboutImageItem[] = [
   {
-    src: "/about-1.jpg",
+    src: "/images/about/about-1.jpg",
     alt: "Business team collaborating in a modern conference room",
   },
   {
-    src: "/about-2.jpg",
+    src: "/images/about/about-2.jpg",
     alt: "Spacious open-plan coworking office with desks and natural lighting",
   },
   {
-    src: "/about-3.jpg",
+    src: "/images/about/about-3.jpg",
     alt: "Professionals discussing workspace options over laptops",
   },
 ];
