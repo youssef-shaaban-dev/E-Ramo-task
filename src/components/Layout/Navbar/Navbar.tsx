@@ -9,16 +9,17 @@ import { NavActions } from "./NavActions";
 import { NavMobileMenu } from "./NavMobileMenu";
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/", isActive: true },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Contact Us", href: "/contact" },
-  { label: "Membership", href: "/membership" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Products", href: "#products" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Contact Us", href: "#contact" },
+  { label: "Membership", href: "#pricing" },
 ];
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("#home");
 
   return (
     <header className="w-full border-b border-border/40 sticky top-0 z-50 backdrop-blur-md bg-background/95">
@@ -27,7 +28,11 @@ export function Navbar() {
         <NavbarLogo />
 
         {/* Desktop Navigation Links */}
-        <NavDesktopMenu items={NAV_ITEMS} />
+        <NavDesktopMenu
+          items={NAV_ITEMS}
+          activeHref={activeHref}
+          onSelect={setActiveHref}
+        />
 
         {/* Right Actions & Utilities */}
         <NavActions />
@@ -50,6 +55,8 @@ export function Navbar() {
         isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
         items={NAV_ITEMS}
+        activeHref={activeHref}
+        onSelect={setActiveHref}
       />
     </header>
   );

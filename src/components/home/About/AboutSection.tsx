@@ -5,7 +5,7 @@ import { AboutActions } from "./AboutActions";
 
 export function AboutSection() {
   return (
-    <section className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-padding overflow-hidden">
+    <section id="about" className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto section-padding overflow-hidden">
       {/* Decorative ambient tint matching design */}
       <div
         className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-accent/30 blur-3xl -z-10"

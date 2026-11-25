@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Users, UsersRound, Building2, Laptop } from "lucide-react";
 
 export const MAIN_PAGES = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Contact Us", href: "#contact" },
@@ -10,10 +10,10 @@ export const MAIN_PAGES = [
 ];
 
 export const PRODUCTS = [
-  { label: "Shared Space", href: "#", icon: Users },
-  { label: "Private Offices", href: "#", icon: Building2 },
-  { label: "Meeting Rooms", href: "#", icon: UsersRound },
-  { label: "Virtual Offices", href: "#", icon: Laptop },
+  { label: "Shared Space", href: "#products", icon: Users },
+  { label: "Private Offices", href: "#products", icon: Building2 },
+  { label: "Meeting Rooms", href: "#products", icon: UsersRound },
+  { label: "Virtual Offices", href: "#products", icon: Laptop },
 ];
 
 export function FooterNavList() {

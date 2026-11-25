@@ -23,7 +23,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-2 pb-12 md:pb-16">
+    <section id="home" className="relative w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-2 pb-12 md:pb-16">
       {/* Hero Visual Card */}
       <HeroBanner />
 

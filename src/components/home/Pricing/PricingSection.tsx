@@ -63,7 +63,7 @@ export function PricingSection() {
   const [activeCategory, setActiveCategory] = useState("meeting-rooms");
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8 section-padding max-w-7xl mx-auto">
+    <section id="pricing" className="w-full px-4 sm:px-6 lg:px-8 section-padding max-w-7xl mx-auto">
       {/* ── Section Header ── */}
       <div className="text-center mb-10 md:mb-12">
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-write-sub font-body mb-2">

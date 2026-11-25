@@ -24,7 +24,7 @@ export function SpaceDetailsSection() {
   const [activeTab, setActiveTab] = useState<string>("shared-space");
 
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-14 pb-10 md:pt-16 md:pb-12">
+    <section id="products" className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-14 pb-10 md:pt-16 md:pb-12">
       {/* Outer Card with Floating Top Pills */}
       <div className="relative bg-panel-warm rounded-3xl lg:rounded-4xl p-6 sm:p-10 lg:p-14 pt-12 sm:pt-16 border border-border/50 shadow-xs">
         {/* Floating Top Pill Bar */}

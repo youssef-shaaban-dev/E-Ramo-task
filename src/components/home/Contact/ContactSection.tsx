@@ -4,7 +4,7 @@ import { ContactForm } from "./ContactForm";
 
 export function ContactSection() {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8 section-padding max-w-7xl mx-auto">
+    <section id="contact" className="w-full px-4 sm:px-6 lg:px-8 section-padding max-w-7xl mx-auto">
       {/* ── Header ── */}
       <div className="text-center mb-10 md:mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-write-main font-title">
