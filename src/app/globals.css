@@ -18,6 +18,11 @@
   --badge-warm-foreground: #365327;
   --hero-title: #F8E9D9;
   --panel-warm: #FFFAF5;
+  --available: #8EAA79;
+  --available-foreground: #ffffff;
+  --unavailable: #D9534F;
+  --unavailable-foreground: #ffffff;
+  --rating: #F5A623;
   --hero-overlay: linear-gradient(180.13deg, #3F3533 -2.35%, rgba(76, 63, 59, 0) 118.18%);
 }
 
@@ -43,6 +48,11 @@
   --color-badge-warm-foreground: var(--badge-warm-foreground);
   --color-hero-title: var(--hero-title);
   --color-panel-warm: var(--panel-warm);
+  --color-available: var(--available);
+  --color-available-foreground: var(--available-foreground);
+  --color-unavailable: var(--unavailable);
+  --color-unavailable-foreground: var(--unavailable-foreground);
+  --color-rating: var(--rating);
   --font-title: var(--font-dm-sans);
   --font-body: var(--font-open-sans);
   --font-sans: var(--font-open-sans);
